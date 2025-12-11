@@ -10,6 +10,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Call Viper4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 
